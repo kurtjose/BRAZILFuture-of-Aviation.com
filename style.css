@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Merriweather&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Anton', sans-serif;
+font-family: 'Merriweather', serif;
+}
+
+html{
+    font-size: 12px;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 1.9rem;
+}
+p{
+    font-size: 1.2rem;
+}
+
+header{
+    width: 100%; 
+    height: 5rem;
+    background-color: #E1D7C6;
+    position: fixed;
+    top: 0;
+    z-index: 333;
+}
+
+.container{
+    width: 96%;
+    max-width: 117rem;
+    margin: 0 auto;
+}
+
+.navbar{
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1.5rem;
+}
+
+.navbar h1{
+    text-transform: uppercase;
+    color: #25316D;
+    font-weight: 600;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.navbar ul a{
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    text-transform: uppercase;
+    color: #030898;
+    font-weight: 400;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+}
+.navbar ul a:hover{
+    color: #25316D;
+    background-color: orange;
+}
+.hero{
+    max-width: 114rem;
+    height: 40rem;
+    background: url(http://www.canadianinquirer.net/wp-content/uploads/2014/09/Philippine_Airlines_Boeing_747-400_Hutchinson.jpg)
+    no-repeat center center/cover;
+    margin: 5rem auto;
+}
+body {
+    background-color: #ECE8DD;
+}
+.airplane{
+    max-width: 114rem;
+    height: 40rem;
+    background: url(https://wallpapercave.com/wp/o4vUVEa.jpg)
+    no-repeat center center/cover;
+    margin: 5rem auto;
+}
+
+main{
+    width: 100;
+    max-width: 88rem;
+    background-color: #7DE5ED;
+    margin: 0 auto;
+    padding: 3rem;
+    border-radius: 1.5rem;
+    margin-top: -15rem;
+}
+
+main h3{
+    font-size: 3rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+main .profile-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0; 
+}
+
+main .profile-container .profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+
+main ,.profile-container .profile .text{
+    margin: 0 1rem;
+    color: black;
+    font-size: 1.2rem;
+    font-weight:300;
+    letter-spacing: 1px;   
+}
+.profile .text h3{
+    text-transform: uppercase;
+}
+
+.btn{
+   display: inline-block;
+   text-transform: capitalize;
+   font-size: 1.2rem;
+   padding: 0.3rem 1.5rem;
+   background-color:aquamarine;
+   border-radius: 0.2rem; 
+}
+
+main .content p{
+    color: black;
+    margin: 1rem 0;
+}
+
+main .content .container-imgcontainer{
+    width: 100%;
+    height: 35rem;
+    background: url()
+    no-repeat center center / cover; 
+}
+.tags{
+    display: flex;
+    align-items: center;
+}
+.tags p{
+    font-size: 1.4rem;
+    text-transform: capitalize;
+}
+.tags a{
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    background-color:azure;
+    color:rgb(20, 20, 20);
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0 0.5rem;
+}
+
+.articles{
+    width:100%;
+    background-color: #7DE5ED;
+    margin: 5rem 0;
+    padding: 5rem 0;  
+}
+
+.articles .article-heading{
+    text-transform: uppercase;
+    text-align: center;
+    width: 100;
+    position: relative;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-between;
+    margin: 4rem auto;
+    gap: 5rem;
+}
+
+.cards .card-container{
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.card .card-container .img-holder{
+    max-width: 100%;
+    height:24rem;
+    background: url(https://tse2.mm.bing.net/th?id=OIP.Jltk-o3WciSZbx3Ym6YzAgHaFD&pid=Api&P=0) no-repeat 
+    center center/cover;
+    position: relative;
+}
+
+.card .card-container.two .img-holder{
+    background: url(https://www.pixelstalk.net/wp-content/uploads/2016/09/Airplane-Iphone-Background-Download-Free.jpg) 
+    no-repeat center center/cover;
+}
+
+.card .card-container .img-holder a{
+    text-transform: capitalize;
+    font-size: 1.2rem;
+    padding: 0.3rem 1.5rem;
+    display: inline-block;
+    color:aqua;
+    font-weight: 400;
+    background-color: white;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+    transition: all 0.4s ease;
+}
+.cards .card-container:hover {
+    transform: translateY(-1rem);
+}
+
+.cards .card-container:hover a{
+    background-color: #544d49;
+    color: white;
+}
+.cards .card-container .card-text{
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 0 0.3rem grey;   
+}
+.cards .card-container .card-text h4{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+}
+.cards .card-container .card-text p{
+    font-size: 1.2rem; 
+}
+
+.article .button{
+    margin: 0 auto;
+    text-align: center; 
+}
+.article .btn{
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    border-radius: none;
+    padding: 0.5rem 3rem;
+}
+footer{
+    background-color: #E1D7C6;
+    padding: 3rem 0;
+}
+.icons{
+    text-align: center;
+}
+.icons .social{
+    font-size: 3rem;
+    color: #605c5c;
+    padding: 1rem; 
+    transition: all 0.4s ease;  
+}
+
+.icons .social i:hover{
+    color: rgb(2, 2, 2);
+    cursor: pointer;
+}
